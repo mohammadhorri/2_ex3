@@ -1,0 +1,27 @@
+ÈÑäÇãå Çí ˜å Ïæ ÚÏÏ ÑÇ ÏÑíÇİÊ æ È ã ã Âä ÑÇ Ç ˜äÏ
+        System.out.print("Enter the first number:");
+        Scanner number1=new Scanner(System.in);
+        int enternumber1=number1.nextInt();
+        System.out.print("Enter the second number:");
+        Scanner number2=new Scanner(System.in);
+        int enternumber2=number2.nextInt();
+        int bmm=0;
+        
+        if(enternumber1>=enternumber2)
+         {
+          int help=enternumber2;
+          enternumber2=enternumber1;
+          enternumber1=help;
+         }
+        for(int i=1;i<=(enternumber1/2)+1;i++)
+         {
+            if(enternumber1%i==0)
+             {
+                if(enternumber2%i==0)
+                 {
+                    bmm=i;
+                 }
+             }
+         }
+        System.out.print("B.M.M:");
+        System.out.println(bmm);
